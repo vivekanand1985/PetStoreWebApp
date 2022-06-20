@@ -1,10 +1,13 @@
+
+pipeline{
 stages {
-  stage(‘scan’){
+  stage(‘Scan’){
 	  steps{	
-		  withSonarQubeEnv(installationName:’JenkinsSonarUbuntu’){
-  			sh ‘.mvnw clean org.sonarsource.scanner.maven:sonar-maven-plugin:3.9.0.2155:sonar’
+		  withSonarQubeEnv(installationName:'JenkinsSonarUbuntu'){
+  			sh '.mvnw clean org.sonarsource.scanner.maven:sonar-maven-plugin:3.9.0.2155:sonar'
       }
     }
   }
 }
 
+}
