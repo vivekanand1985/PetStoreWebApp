@@ -1,5 +1,6 @@
 
 pipeline{
+agent { label 'ubuntu'}
 stages {
   stage(‘Scan’){
 	  steps{	
