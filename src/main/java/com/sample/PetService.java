@@ -26,6 +26,7 @@ public class PetService {
 
         }else {
         	breeds.add("No Breed Available");
+        	System.out.println("There are no new breeds......");
         }
     return breeds;
     }
